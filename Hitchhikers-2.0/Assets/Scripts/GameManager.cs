@@ -156,7 +156,7 @@ public class GameManager : MonoBehaviour
     {
         ChangeGameState(2);
 
-        if (racerNames[0] == playerName)
+        if (racerNames[0] == playerName || racerNames[1] == playerName || racerNames[2] == playerName)
             UIManager.instance.UpdateResultScreen(true);
         else
             UIManager.instance.UpdateResultScreen(false);
