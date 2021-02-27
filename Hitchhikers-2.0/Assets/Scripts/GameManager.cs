@@ -7,6 +7,8 @@ public enum GameState { MainScreen, InGame, EndScreen};
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] Analytics_Manager analytics;
+    MemorySystemData data;
     public static GameManager instance;
     [SerializeField] CamFollow camHolder;
     public PlayerController player;
@@ -58,6 +60,9 @@ public class GameManager : MonoBehaviour
         ChangeGameState(0);
         generator.GenerateLevel();
         SetupRacers();
+
+        analytics.InitializeAnalytics();
+        analytics.StartAnalytics();
     }
 
     void SetupRacers()
@@ -157,9 +162,15 @@ public class GameManager : MonoBehaviour
         ChangeGameState(2);
 
         if (racerNames[0] == playerName || racerNames[1] == playerName || racerNames[2] == playerName)
+        {
             UIManager.instance.UpdateResultScreen(true);
+            analytics.LogLevelCompleted(data);
+        }
         else
+        {
             UIManager.instance.UpdateResultScreen(false);
+            analytics.LogLevelFailed(data);
+        }
 
         Invoke("LevelEndScreen", 5f);
 
@@ -184,6 +195,7 @@ public class GameManager : MonoBehaviour
         SaveProgress();
         UIManager.instance.EnableLoadingScreen();
         timeSinceLevelStart = 0;
+        analytics.LogLevelCompleted(data);
     }
 
     public void CheckLevelEnd()
@@ -205,12 +217,31 @@ public class GameManager : MonoBehaviour
     {
         PlayerPrefs.SetInt("CurrentMoney", playerMoney);
         PlayerPrefs.SetInt("CurrentLevel", currentLevel);
+        SystemData_Update();
     }
 
     void ResetProgress()
     {
         PlayerPrefs.SetInt("CurrentMoney", 0);
         PlayerPrefs.SetInt("CurrentLevel", 0);
+    }
+
+        public void SystemData_Update()
+    {
+        SystemData_Check();
+        data.level=currentLevel;
+        data.isFirstGame=(currentLevel==0);
+        
+        //else {print("ERROR: NO LEVEL MANAGER FOUND FOR DATA SYSTEM!!!");}
+    }
+
+    public void SystemData_Check()
+    {
+        if (data==null)
+        {
+            data = MemorySystem.LoadFile();
+            if (data==null){data = new MemorySystemData();}
+        }
     }
 
     void ResetLevel()
