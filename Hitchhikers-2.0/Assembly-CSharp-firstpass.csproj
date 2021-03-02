@@ -47,6 +47,7 @@
      <Compile Include="Assets\Plugins\FlurrySDK\FlurryAgent.cs" />
      <Compile Include="Assets\Plugins\FlurrySDK\FlurryAgentAndroid.cs" />
      <Compile Include="Assets\Plugins\FlurrySDK\FlurryAgentIOS.cs" />
+     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
      <None Include="Assets\Plugins\Demigiant\DOTween\readme.txt" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.6f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -225,6 +226,18 @@
     <Reference Include="UnityEditor">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.6f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
+    <Reference Include="Facebook.Unity">
+        <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Assets/FacebookSDK/Plugins/Facebook.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook.Unity.Gameroom">
+        <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Assets/FacebookSDK/Plugins/Gameroom/Facebook.Unity.Gameroom.dll</HintPath>
+    </Reference>
+    <Reference Include="FacebookNamedPipeClient">
+        <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Assets/FacebookSDK/Plugins/Gameroom/FacebookNamedPipeClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook.Unity.Settings">
+        <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Assets/FacebookSDK/Plugins/Settings/Facebook.Unity.Settings.dll</HintPath>
+    </Reference>
     <Reference Include="DOTween">
         <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
     </Reference>
@@ -236,18 +249,6 @@
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
         <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Library/PackageCache/com.unity.analytics@3.3.5/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
-    </Reference>
-    <Reference Include="Facebook.Unity">
-        <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Assets/FacebookSDK/Plugins/Facebook.Unity.dll</HintPath>
-    </Reference>
-    <Reference Include="FacebookNamedPipeClient">
-        <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Assets/FacebookSDK/Plugins/Gameroom/FacebookNamedPipeClient.dll</HintPath>
-    </Reference>
-    <Reference Include="Facebook.Unity.Gameroom">
-        <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Assets/FacebookSDK/Plugins/Gameroom/Facebook.Unity.Gameroom.dll</HintPath>
-    </Reference>
-    <Reference Include="Facebook.Unity.Settings">
-        <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Assets/FacebookSDK/Plugins/Settings/Facebook.Unity.Settings.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.6f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>

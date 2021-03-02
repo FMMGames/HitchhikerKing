@@ -123,6 +123,7 @@
      <None Include="Assets\ThirdParty\Epic Toon FX\Prefabs\Environment\Environment FX.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\ThirdParty\Epic Toon FX\Prefabs\Combat\Combat FX.txt" />
+     <None Include="Assets\FacebookSDK\link.xml" />
      <None Include="Assets\ThirdParty\JMO Assets\Toony Colors\Shaders 2.0\Rim Lighting.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
      <None Include="Assets\ThirdParty\JMO Assets\Toony Colors\Shaders 2.0\Rim Alpha.shader" />

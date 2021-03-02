@@ -55,6 +55,8 @@
      <Compile Include="Assets\ThirdParty\NavMeshComponents\Editor\NavMeshModifierEditor.cs" />
      <Compile Include="Assets\ThirdParty\NavMeshComponents\Editor\NavMeshModifierVolumeEditor.cs" />
      <Compile Include="Assets\ThirdParty\NavMeshComponents\Editor\NavMeshSurfaceEditor.cs" />
+     <None Include="Assets\PlayServicesResolver\Editor\play-services-resolver_v1.2.135.0.txt" />
+     <None Include="Assets\FacebookSDK\Plugins\Editor\Dependencies.xml" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.6f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -250,6 +252,36 @@
     <Reference Include="UnityEditor.Android.Extensions">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.6f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="Google.IOSResolver_v1.2.144">
+        <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Assets/ExternalDependencyManager/Editor/Google.IOSResolver_v1.2.144.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.JarResolver_v1.2.144">
+        <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Assets/ExternalDependencyManager/Editor/Google.JarResolver_v1.2.144.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.UnityPackageManagerResolver_v1.2.144">
+        <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Assets/ExternalDependencyManager/Editor/Google.UnityPackageManagerResolver_v1.2.144.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.VersionHandlerImpl_v1.2.144">
+        <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Assets/ExternalDependencyManager/Editor/Google.VersionHandlerImpl_v1.2.144.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook.Unity">
+        <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Assets/FacebookSDK/Plugins/Facebook.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook.Unity.Editor">
+        <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Assets/FacebookSDK/Plugins/Editor/Facebook.Unity.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook.Unity.Gameroom">
+        <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Assets/FacebookSDK/Plugins/Gameroom/Facebook.Unity.Gameroom.dll</HintPath>
+    </Reference>
+    <Reference Include="FacebookNamedPipeClient">
+        <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Assets/FacebookSDK/Plugins/Gameroom/FacebookNamedPipeClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook.Unity.Settings">
+        <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Assets/FacebookSDK/Plugins/Settings/Facebook.Unity.Settings.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.VersionHandler">
+        <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll</HintPath>
+    </Reference>
     <Reference Include="DOTween">
         <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
     </Reference>
@@ -268,35 +300,14 @@
     <Reference Include="UnityEditor.Purchasing">
         <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Library/PackageCache/com.unity.purchasing@2.0.6/Editor/UnityEditor.Purchasing.dll</HintPath>
     </Reference>
-    <Reference Include="Google.JarResolver_v1.2.144">
-        <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Assets/ExternalDependencyManager/Editor/Google.JarResolver_v1.2.144.dll</HintPath>
+    <Reference Include="Google.JarResolver_v1.2.135.0">
+        <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Assets/PlayServicesResolver/Editor/Google.JarResolver_v1.2.135.0.dll</HintPath>
     </Reference>
-    <Reference Include="Facebook.Unity">
-        <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Assets/FacebookSDK/Plugins/Facebook.Unity.dll</HintPath>
+    <Reference Include="Google.IOSResolver_v1.2.135.0">
+        <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Assets/PlayServicesResolver/Editor/Google.IOSResolver_v1.2.135.0.dll</HintPath>
     </Reference>
-    <Reference Include="FacebookNamedPipeClient">
-        <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Assets/FacebookSDK/Plugins/Gameroom/FacebookNamedPipeClient.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.UnityPackageManagerResolver_v1.2.144">
-        <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Assets/ExternalDependencyManager/Editor/Google.UnityPackageManagerResolver_v1.2.144.dll</HintPath>
-    </Reference>
-    <Reference Include="Facebook.Unity.Gameroom">
-        <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Assets/FacebookSDK/Plugins/Gameroom/Facebook.Unity.Gameroom.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.VersionHandler">
-        <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.VersionHandlerImpl_v1.2.144">
-        <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Assets/ExternalDependencyManager/Editor/Google.VersionHandlerImpl_v1.2.144.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.IOSResolver_v1.2.144">
-        <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Assets/ExternalDependencyManager/Editor/Google.IOSResolver_v1.2.144.dll</HintPath>
-    </Reference>
-    <Reference Include="Facebook.Unity.Settings">
-        <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Assets/FacebookSDK/Plugins/Settings/Facebook.Unity.Settings.dll</HintPath>
-    </Reference>
-    <Reference Include="Facebook.Unity.Editor">
-        <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Assets/FacebookSDK/Plugins/Editor/Facebook.Unity.Editor.dll</HintPath>
+    <Reference Include="Google.VersionHandlerImpl_v1.2.135.0">
+        <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.135.0.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
         <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
