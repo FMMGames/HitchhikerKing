@@ -49,6 +49,18 @@ public class Analytics_Manager : MonoBehaviour
         else {print ("INVALID LOG EVENT DATA! > "+eventName);}
     }
 
+    public void LogLevelStarted(MemorySystemData data)
+    {
+        if (data!=null)
+        {
+            foreach (Analytics_Base analytics in analyticsReferences)
+            {
+                analytics.LogLevelStarted(data);
+            }
+        }
+        else {print ("INVALID LOG EVENT DATA! > LogLevelCompleted");}
+    }
+
     public void LogLevelCompleted(MemorySystemData data)
     {
         if (data!=null)

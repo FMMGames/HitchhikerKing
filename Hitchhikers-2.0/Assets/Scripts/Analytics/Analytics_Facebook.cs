@@ -25,6 +25,13 @@ public class Analytics_Facebook : Analytics_Base
         FB.LogAppEvent(eventString, data.level, parameters);
     }
 
+    public override void LogLevelStarted(MemorySystemData data)
+    {
+        base.LogLevelStarted(data);
+
+        FB.LogAppEvent("Level_Started", data.level, null);
+    }
+
     public override void LogLevelCompleted(MemorySystemData data)
     {
         base.LogLevelCompleted(data);

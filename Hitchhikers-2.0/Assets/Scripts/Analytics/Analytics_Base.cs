@@ -19,6 +19,7 @@ public class Analytics_Base : MonoBehaviour
     public virtual void InitializeAnalytics(){}
     public virtual void StartAnalytics(){}
 
+    public virtual void LogLevelStarted(MemorySystemData data){}
     public virtual void LogLevelCompleted(MemorySystemData data){}
     public virtual void LogLevelFailed(MemorySystemData data){}
 }

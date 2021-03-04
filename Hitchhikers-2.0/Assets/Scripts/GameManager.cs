@@ -155,6 +155,7 @@ public class GameManager : MonoBehaviour
     public void LevelStart()
     {
         ChangeGameState(1);
+        analytics.LogLevelStarted(data);
     }
 
     public void LevelEnd()

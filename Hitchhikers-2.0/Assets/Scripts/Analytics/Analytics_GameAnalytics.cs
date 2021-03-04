@@ -18,6 +18,12 @@ public class Analytics_GameAnalytics : Analytics_Base
         
     }
 
+    public override void LogLevelStarted(MemorySystemData data)
+    {
+        base.LogLevelStarted(data);
+        GameAnalytics.NewProgressionEvent(GAProgressionStatus.Start, data.level.ToString());
+    }
+
     public override void LogLevelCompleted(MemorySystemData data)
     {
         base.LogLevelCompleted(data);
