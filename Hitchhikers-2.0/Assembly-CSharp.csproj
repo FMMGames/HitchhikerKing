@@ -713,44 +713,14 @@
     <Reference Include="Boo.Lang">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-        <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Monetization">
-        <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Library/ScriptAssemblies/UnityEngine.Monetization.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VSCode.Editor">
-        <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Advertisements">
-        <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Library/ScriptAssemblies/UnityEngine.Advertisements.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro.Editor">
-        <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.UI">
         <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline">
-        <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.CollabProxy.Editor">
-        <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Rider.Editor">
-        <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
         <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
         <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-        <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.DataPrivacy">
-        <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
         <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
@@ -760,6 +730,56 @@
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
       <Project>{c79997e7-1412-e3d7-e780-1f93f635464f}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Timeline.Editor.csproj">
+      <Project>{89a252af-7b63-c0c9-d9d2-f51ea46f2960}</Project>
+      <Name>Unity.Timeline.Editor</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.Monetization.csproj">
+      <Project>{f3145de3-bdf6-2975-2ade-deffc27434b9}</Project>
+      <Name>UnityEngine.Monetization</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VSCode.Editor.csproj">
+      <Project>{6c93f6d5-835e-ca70-3557-15ae492a3592}</Project>
+      <Name>Unity.VSCode.Editor</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.Advertisements.csproj">
+      <Project>{0564407b-f74a-c301-8842-5a210bd11b13}</Project>
+      <Name>UnityEngine.Advertisements</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
+      <Project>{e3ca7721-45f1-d30d-8f8d-31f52b23697b}</Project>
+      <Name>Unity.TextMeshPro.Editor</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Timeline.csproj">
+      <Project>{be4abfbd-e205-486c-1d0b-dbf67765fa00}</Project>
+      <Name>Unity.Timeline</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Unity.CollabProxy.Editor.csproj">
+      <Project>{651f3299-aa76-2882-4da2-895c650cd866}</Project>
+      <Name>Unity.CollabProxy.Editor</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Rider.Editor.csproj">
+      <Project>{42f117c8-f02e-e8ec-58df-c829bdc1b6e1}</Project>
+      <Name>Unity.Rider.Editor</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Unity.TextMeshPro.csproj">
+      <Project>{6b44693e-378c-2bfa-90de-9c64d99e7db9}</Project>
+      <Name>Unity.TextMeshPro</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Analytics.DataPrivacy.csproj">
+      <Project>{53aedff8-af54-1d57-9dd7-8283e4ded1c4}</Project>
+      <Name>Unity.Analytics.DataPrivacy</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>
