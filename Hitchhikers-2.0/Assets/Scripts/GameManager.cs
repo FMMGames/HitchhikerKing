@@ -40,6 +40,9 @@ public class GameManager : MonoBehaviour
     public bool levelGenerated;
     [SerializeField] string[] allNames;
 
+    [SerializeField] float levelEndScreenDelay=5.0f;
+    [SerializeField] float checkLevelEndDelay=10.0f;
+
     [ContextMenu("Load Bot Names")]
     public void LoadBotNames()
     {
@@ -173,9 +176,11 @@ public class GameManager : MonoBehaviour
             analytics.LogLevelFailed(data);
         }
 
-        Invoke("LevelEndScreen", 5f);
+        Time.timeScale=1.0f;
 
-        Invoke("CheckLevelEnd", 10f);
+        Invoke("LevelEndScreen", levelEndScreenDelay);
+
+        Invoke("CheckLevelEnd", checkLevelEndDelay);
     }
 
     void LevelEndScreen()
@@ -196,7 +201,7 @@ public class GameManager : MonoBehaviour
         SaveProgress();
         UIManager.instance.EnableLoadingScreen();
         timeSinceLevelStart = 0;
-        analytics.LogLevelCompleted(data);
+        analytics.LogLevelStarted(data);
     }
 
     public void CheckLevelEnd()
@@ -212,6 +217,8 @@ public class GameManager : MonoBehaviour
 
         if (PlayerPrefs.GetInt("CurrentLevel") > 0)
             currentLevel = PlayerPrefs.GetInt("CurrentLevel");
+        
+        SystemData_Update();
     }
 
     void SaveProgress()
@@ -219,12 +226,16 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetInt("CurrentMoney", playerMoney);
         PlayerPrefs.SetInt("CurrentLevel", currentLevel);
         SystemData_Update();
+        
+        MemorySystem.SaveFile(data);
     }
 
     void ResetProgress()
     {
         PlayerPrefs.SetInt("CurrentMoney", 0);
         PlayerPrefs.SetInt("CurrentLevel", 0);
+
+        SystemData_Update();
     }
 
         public void SystemData_Update()

@@ -58,7 +58,7 @@ public class Analytics_Manager : MonoBehaviour
                 analytics.LogLevelStarted(data);
             }
         }
-        else {print ("INVALID LOG EVENT DATA! > LogLevelCompleted");}
+        else {print ("INVALID LOG EVENT DATA! > LogLevelStarted");}
     }
 
     public void LogLevelCompleted(MemorySystemData data)
