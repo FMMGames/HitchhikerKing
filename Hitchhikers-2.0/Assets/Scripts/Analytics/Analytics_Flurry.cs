@@ -31,6 +31,11 @@ public class Analytics_Flurry : Analytics_Base
         }
     }
 
+    public override void StartAnalytics()
+    {
+        base.StartAnalytics();
+    }
+
     public override void LogEvent(string eventString, MemorySystemData data, Dictionary<string, object> parameters)
     {
         Flurry.EventRecordStatus status = Flurry.LogEvent(eventString);

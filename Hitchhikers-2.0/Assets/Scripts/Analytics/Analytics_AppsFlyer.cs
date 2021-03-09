@@ -57,7 +57,6 @@ public class Analytics_AppsFlyer : Analytics_Base, IAppsFlyerConversionData
     {
         Dictionary<string, string> eventValues = new Dictionary<string, string>();
         eventValues.Add("Level", data.level.ToString());
-        //eventValues.Add("Jumps", (currentJumps.ToString()+"/"+currentScene.allowedJumps.ToString()));
 
         return eventValues;
     }

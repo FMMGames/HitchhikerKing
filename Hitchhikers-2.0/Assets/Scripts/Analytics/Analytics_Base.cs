@@ -16,8 +16,15 @@ public class Analytics_Base : MonoBehaviour
         if (debugConsole) print ("logged '"+eventString+"' on "+AnalyticsName());
     }
 
-    public virtual void InitializeAnalytics(){}
-    public virtual void StartAnalytics(){}
+    public virtual void InitializeAnalytics()
+    {
+        if (debugConsole) print ("Initialized "+AnalyticsName());
+    }
+    
+    public virtual void StartAnalytics()
+    {
+        if (debugConsole) print ("Started "+AnalyticsName());
+    }
 
     public virtual void LogLevelStarted(MemorySystemData data)
     {
