@@ -178,9 +178,10 @@ public class GameManager : MonoBehaviour
 
         Time.timeScale=1.0f;
 
+        LevelEndScreen();
         Invoke("LevelEndScreen", levelEndScreenDelay);
 
-        Invoke("CheckLevelEnd", checkLevelEndDelay);
+        //Invoke("CheckLevelEnd", checkLevelEndDelay);
     }
 
     void LevelEndScreen()

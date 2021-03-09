@@ -9,6 +9,8 @@ public class Analytics_Facebook : Analytics_Base
 {
     public override void InitializeAnalytics()
     {
+        base.InitializeAnalytics();
+
         if (Application.platform == RuntimePlatform.IPhonePlayer)
         {Application.targetFrameRate = 60;}
 

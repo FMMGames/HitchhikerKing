@@ -8,13 +8,14 @@ public class Analytics_GameAnalytics : Analytics_Base
     public override void InitializeAnalytics()
     {
         base.InitializeAnalytics();
+        
         GameAnalytics.Initialize();
     }
 
     public override void StartAnalytics()
     {
         base.StartAnalytics();
-        //GameAnalytics.
+        GameAnalytics.StartSession();
         
     }
 

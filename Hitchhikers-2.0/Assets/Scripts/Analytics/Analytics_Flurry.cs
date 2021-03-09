@@ -12,6 +12,8 @@ public class Analytics_Flurry : Analytics_Base
 
     public override void InitializeAnalytics()
     {
+        base.InitializeAnalytics();
+
         InitializeFlurryAPIKey();
         new Flurry.Builder()
                   .WithCrashReporting(true)
@@ -44,24 +46,27 @@ public class Analytics_Flurry : Analytics_Base
     public override void LogLevelStarted(MemorySystemData data)
     {
         base.LogLevelStarted(data);
+
         LogEvent("Level "+data.level+" started", data, null);
     }
 
     public override void LogLevelCompleted(MemorySystemData data)
     {
         base.LogLevelCompleted(data);
+
         LogEvent("Level "+data.level+" completed", data, null);
     }
 
     public override void LogLevelFailed(MemorySystemData data)
     {
         base.LogLevelFailed(data);
+
         LogEvent("Level "+data.level+" failed", data, null);
     }
 
     public void DebugFlurryVersion()
     {
-        Debug.Log("AgentVersion: " + Flurry.GetAgentVersion());
-        Debug.Log("ReleaseVersion: " + Flurry.GetReleaseVersion());
+        Debug.Log("AgentVersion: "  + Flurry.GetAgentVersion());
+        Debug.Log("ReleaseVersion: "+ Flurry.GetReleaseVersion());
     }
 }

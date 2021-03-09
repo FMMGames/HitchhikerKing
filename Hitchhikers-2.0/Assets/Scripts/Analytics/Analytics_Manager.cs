@@ -9,13 +9,12 @@ public class Analytics_Manager : MonoBehaviour
     void Awake()
     {
         UpdateAnalyticsReferences();
-        InitializeAnalytics();
-        StartAnalytics();
     }
 
     void UpdateAnalyticsReferences()
     {
         analyticsReferences = FindObjectsOfType<Analytics_Base>();
+        print (analyticsReferences.Length.ToString()+" analytics objects found");
     }
 
     public void InitializeAnalytics()
