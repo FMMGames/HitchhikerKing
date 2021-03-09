@@ -34,13 +34,12 @@ public class Analytics_Flurry : Analytics_Base
     public override void LogEvent(string eventString, MemorySystemData data, Dictionary<string, object> parameters)
     {
         Flurry.EventRecordStatus status = Flurry.LogEvent(eventString);
-        print ("Flurry Event Recorded: "+eventString);
     }
 
     public override void LogLevelStarted(MemorySystemData data)
     {
         base.LogLevelStarted(data);
-        LogEvent("Level "+data.level+" failed", data, null);
+        LogEvent("Level "+data.level+" started", data, null);
     }
 
     public override void LogLevelCompleted(MemorySystemData data)

@@ -201,7 +201,7 @@ public class GameManager : MonoBehaviour
         SaveProgress();
         UIManager.instance.EnableLoadingScreen();
         timeSinceLevelStart = 0;
-        analytics.LogLevelStarted(data);
+        //analytics.LogLevelStarted(data);
     }
 
     public void CheckLevelEnd()

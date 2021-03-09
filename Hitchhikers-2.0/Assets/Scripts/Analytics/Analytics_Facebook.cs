@@ -29,21 +29,21 @@ public class Analytics_Facebook : Analytics_Base
     {
         base.LogLevelStarted(data);
 
-        FB.LogAppEvent("Level_Started", data.level, null);
+        FB.LogAppEvent("Level_Started", data.level, Parameters(data));
     }
 
     public override void LogLevelCompleted(MemorySystemData data)
     {
         base.LogLevelCompleted(data);
 
-        FB.LogAppEvent("Level_Complete", data.level, null);
+        FB.LogAppEvent("Level_Complete", data.level, Parameters(data));
     }
 
     public override void LogLevelFailed(MemorySystemData data)
     {
         base.LogLevelFailed(data);
 
-        FB.LogAppEvent("Level_Failed", data.level, null);
+        FB.LogAppEvent("Level_Failed", data.level, Parameters(data));
     }
 
     private void FBInitCallBack()
@@ -57,5 +57,14 @@ public class Analytics_Facebook : Analytics_Base
         if (!paused)
             if (FB.IsInitialized)
                 FB.ActivateApp();
+    }
+
+    Dictionary<string, object> Parameters(MemorySystemData data)
+    {
+        Dictionary<string, object> parameters = new Dictionary<string, object>();
+        parameters[AppEventParameterName.ContentID] = "Level";
+        parameters[AppEventName.AchievedLevel] = data.level.ToString();
+
+        return parameters;
     }
 }

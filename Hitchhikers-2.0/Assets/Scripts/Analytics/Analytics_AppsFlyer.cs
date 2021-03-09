@@ -34,7 +34,7 @@ public class Analytics_AppsFlyer : Analytics_Base, IAppsFlyerConversionData
 
     public override void LogLevelStarted(MemorySystemData data)
     {
-        base.LogLevelCompleted(data);
+        base.LogLevelStarted(data);
 
         AppsFlyer.sendEvent("Level_Start", GetAppsFlyerEventDictionary(data));
     }

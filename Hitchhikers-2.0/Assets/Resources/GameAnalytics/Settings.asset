@@ -41,8 +41,21 @@ MonoBehaviour:
   SelectedOrganization: 00000000
   SelectedStudio: 00000000
   SelectedGame: 00000000
-  NewVersion: 
-  Changes: 
+  NewVersion: 6.4.1
+  Changes: '6.4.1
+
+    - added idfa consent status field to events (ios)
+
+
+    6.4.0
+
+    -
+    added support for unity package manager
+
+
+    6.3.14
+
+    - fixed playmaker scripts'
   SignUpOpen: 1
   StudioName: 
   GameName: 
@@ -50,7 +63,7 @@ MonoBehaviour:
   OrganizationIdentifier: 
   EmailGA: 
   IntroScreen: 0
-  InfoLogEditor: 1
+  InfoLogEditor: 0
   InfoLogBuild: 1
   VerboseLogBuild: 0
   UseManualSessionHandling: 0
@@ -64,7 +77,7 @@ MonoBehaviour:
   ResourceCurrencies: []
   LastCreatedGamePlatform: 0
   Platforms: 0b000000
-  CurrentInspectorState: 1
+  CurrentInspectorState: 3
   ClosedHints: 
   DisplayHints: 0
   DisplayHintsScrollState: {x: 0, y: 0}

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Analytics_Base : MonoBehaviour
 {
-    public bool hasInitialized;
+    [SerializeField] bool debugConsole=true;
     // Start is called before the first frame update
     protected virtual void Start(){}
 
@@ -13,13 +13,29 @@ public class Analytics_Base : MonoBehaviour
 
     public virtual void LogEvent(string eventString, MemorySystemData data, Dictionary<string, object> parameters)
     {
-
+        if (debugConsole) print ("logged '"+eventString+"' on "+AnalyticsName());
     }
 
     public virtual void InitializeAnalytics(){}
     public virtual void StartAnalytics(){}
 
-    public virtual void LogLevelStarted(MemorySystemData data){}
-    public virtual void LogLevelCompleted(MemorySystemData data){}
-    public virtual void LogLevelFailed(MemorySystemData data){}
+    public virtual void LogLevelStarted(MemorySystemData data)
+    {
+        if (debugConsole) print ("logged 'Level Started' on "+AnalyticsName());
+    }
+    
+    public virtual void LogLevelCompleted(MemorySystemData data)
+    {
+        if (debugConsole) print ("logged 'Level Completed' on "+AnalyticsName());
+    }
+
+    public virtual void LogLevelFailed(MemorySystemData data)
+    {
+        if (debugConsole) print ("logged 'Level Failed' on "+AnalyticsName());
+    }
+
+    string AnalyticsName()
+    {return this.GetType().Name;}
+
+
 }
