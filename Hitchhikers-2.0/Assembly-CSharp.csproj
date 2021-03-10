@@ -713,6 +713,18 @@
     <Reference Include="Boo.Lang">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.UI">
+        <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+        <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Tilemap.Editor">
+        <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+        <HintPath>C:/Users/SSD/Documents/GitHub/HitchhikerKing/Hitchhikers-2.0/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
@@ -745,11 +757,6 @@
       <Name>Unity.TextMeshPro.Editor</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
-    <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{86c4afa7-e804-9ae2-e262-0fefaa3ba543}</Project>
-      <Name>UnityEngine.UI</Name>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
     <ProjectReference Include="Unity.Timeline.csproj">
       <Project>{be4abfbd-e205-486c-1d0b-dbf67765fa00}</Project>
       <Name>Unity.Timeline</Name>
@@ -765,16 +772,6 @@
       <Name>Unity.Rider.Editor</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
-    <ProjectReference Include="Unity.2D.Sprite.Editor.csproj">
-      <Project>{20e0199d-01c1-7e48-7359-598eb4c5ae55}</Project>
-      <Name>Unity.2D.Sprite.Editor</Name>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Tilemap.Editor.csproj">
-      <Project>{9c8bb9f4-44e5-a720-ffce-1c636dcc994a}</Project>
-      <Name>Unity.2D.Tilemap.Editor</Name>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.csproj">
       <Project>{6b44693e-378c-2bfa-90de-9c64d99e7db9}</Project>
       <Name>Unity.TextMeshPro</Name>
@@ -783,11 +780,6 @@
     <ProjectReference Include="Unity.Analytics.DataPrivacy.csproj">
       <Project>{53aedff8-af54-1d57-9dd7-8283e4ded1c4}</Project>
       <Name>Unity.Analytics.DataPrivacy</Name>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
-    <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{9c25b67a-1e8c-e560-9832-58a26c7affef}</Project>
-      <Name>UnityEditor.UI</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>
